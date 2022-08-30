@@ -1,0 +1,7 @@
+apiVersion: v1
+appVersion: 0.1
+description: MLFlow
+maintainers:
+- name: Hamza Raouzi Deepecho
+name: MLFLOW tracking server
+version: 0.1

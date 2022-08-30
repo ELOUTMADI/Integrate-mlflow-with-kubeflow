@@ -1,0 +1,6 @@
+# application name is a namespace
+# docker images
+image:
+  server: hamzaraouzi/mlflow
+  pullPolicy: Always
+  version: 0.1
