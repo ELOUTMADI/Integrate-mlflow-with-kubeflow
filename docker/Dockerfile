@@ -8,14 +8,14 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 
-ENV AZURE_STORAGE_ACCESS_KEY WHwVnffc50wbJP6/BtGuf2kYf5wXJ3M4DCRfq1jJRtbhYB8TUgQwNW7JO8QVezENXBHtFPM/GiUx+AStHKMmmw==
-ENV AZURE_STORAGE_CONNECTION_STRING DefaultEndpointsProtocol=https;AccountName=cvat00test;AccountKey=WHwVnffc50wbJP6/BtGuf2kYf5wXJ3M4DCRfq1jJRtbhYB8TUgQwNW7JO8QVezENXBHtFPM/GiUx+AStHKMmmw==;EndpointSuffix=core.windows.net
+ENV AZURE_STORAGE_ACCESS_KEY (Enter here your access key)
+ENV AZURE_STORAGE_CONNECTION_STRING (Enter here your connection string)
 
-ENV MLFLOW_TRACKING_USERNAME="deepecho"
-ENV MLFLOW_TRACKING_PASSWORD="deepechomlflow"
+ENV MLFLOW_TRACKING_USERNAME="Choose a name"
+ENV MLFLOW_TRACKING_PASSWORD="Choose a name"
 
 
-ENV BACKEND_URI postgresql://deepecho@deepecho0mlflow0test:Clinicalstudy2022@deepecho0mlflow0test.postgres.database.azure.com/mlflow_db
+ENV BACKEND_URI postgresql:URL_TO_DATABASE
 
 CMD mlflow server \
     --backend-store-uri $BACKEND_URI  \
